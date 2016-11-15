@@ -49,4 +49,100 @@ public class WidgetServiceAPIControllerTest {
 		
 		verify(widgetCollectionsService).getWidgetByID(widgetID);
 	}
+	
+	
+
+
+	/*
+	 * Testing Conditon(s): Default
+	 */
+/*	@Test
+	public void test_method_getAll_0_branch_0()
+	{
+		System.out.println("Now Testing Method:getAll Branch:0");
+		
+		//Constructor
+		WidgetServiceAPIController instance = 
+		
+		//Get expected result and result
+		Object expResult = ;
+		Object result = instance.getAll();
+		
+		//Check Return value
+		assertEquals(expResult, result);
+		
+		//Check Test Verification Points
+		assertEquals(, instance.);
+		
+	}
+
+	/*
+	 * Testing Conditon(s): Default
+	 */
+/*	@Test
+	public void test_method_getWidget_1_branch_0()
+	{
+		System.out.println("Now Testing Method:getWidget Branch:0");
+		
+		//Constructor
+		WidgetServiceAPIController instance = 
+		
+		//Get expected result and result
+		Object expResult = ;
+		Object result = instance.getWidget();
+		
+		//Check Return value
+		assertEquals(expResult, result);
+		
+		//Check Test Verification Points
+		assertEquals(, instance.);
+		
+	}
+
+	/*
+	 * Testing Conditon(s): Default
+	 */
+/*	@Test
+	public void test_method_submitWidget_2_branch_0()
+	{
+		System.out.println("Now Testing Method:submitWidget Branch:0");
+		
+		//Constructor
+		WidgetServiceAPIController instance = 
+		
+		//Get expected result and result
+		Object expResult = ;
+		Object result = instance.submitWidget(, );
+		
+		//Check Return value
+		assertEquals(expResult, result);
+		
+		//Check Test Verification Points
+		assertEquals(, instance.);
+		
+	}
+
+	/*
+	 * Testing Conditon(s): Default
+	 */
+/*	@Test
+	public void test_method_updateWidget_3_branch_0()
+	{
+		System.out.println("Now Testing Method:updateWidget Branch:0");
+		
+		//Constructor
+		WidgetServiceAPIController instance = 
+		
+		//Get expected result and result
+		Object expResult = ;
+		Object result = instance.updateWidget(, );
+		
+		//Check Return value
+		assertEquals(expResult, result);
+		
+		//Check Test Verification Points
+		assertEquals(, instance.);
+		
+	}
+*/
 }
