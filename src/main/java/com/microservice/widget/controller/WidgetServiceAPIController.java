@@ -17,6 +17,8 @@ import com.microservice.widget.service.WidgetCollectionsService;
 @RequestMapping
 public class WidgetServiceAPIController {
 
+	public static final String testURL="/widgets/{id}";
+	
 	@Autowired
 	private WidgetCollectionsService widgetCollectionsService;
 
