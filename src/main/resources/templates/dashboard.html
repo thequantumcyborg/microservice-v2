@@ -57,7 +57,7 @@ div.ex1 {
 			<div id="navbar" class="navbar-collapse collapse">
 				>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="/"><span
+					<li class="active"><a href="/widgets/in"><span
 							class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#add"><span
 							class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
@@ -75,6 +75,8 @@ div.ex1 {
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-user"
 							aria-hidden="true"></span> Welcome to Kirubel's Codetest</a></li>
+					<li><a href="/"> Sign out</a></li>
+							
 
 				</ul>
 
@@ -142,7 +144,7 @@ div.ex1 {
 							</button>
 							<h4 class="modal-title" id="myModalLabel">Add Widget</h4>
 						</div>
-						<form action="#" th:action="@{/widgets/add/api}"
+						<form action="#" th:action="@{/widgets}"
 							th:object="${widget}" method="post">
 							<div class="modal-body">
 								<input type="hidden" name="${_csrf.parameterName}"
@@ -179,7 +181,7 @@ div.ex1 {
 								aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
-							<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							<h4 class="modal-title" id="myModalLabel">Edit [Feature Under Construction]</h4>
 						</div>   
 						<form action="#" th:action="@{/widgets/update/api/__${id}__}"
 							th:object="${widget}" method="put">

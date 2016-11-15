@@ -32,7 +32,7 @@ public class WidgetServiceAPIController {
 		return widgetCollectionsService.getWidgetByID(id);
 	}
 
-	@RequestMapping(value = "/widgets/add/api", method = RequestMethod.POST)
+	@RequestMapping(value = "/widgets", method = RequestMethod.POST)
 	public String submitWidget(@ModelAttribute Widget widget, Model model) {
 		
 		Widget w = widgetCollectionsService.addWidget(widget.getName(), widget.getDescription());
