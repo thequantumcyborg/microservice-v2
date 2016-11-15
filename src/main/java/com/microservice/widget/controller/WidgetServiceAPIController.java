@@ -1,9 +1,12 @@
 package com.microservice.widget.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.microservice.widget.model.Widget;
@@ -28,4 +31,15 @@ public class WidgetServiceAPIController {
 		
 		return widgetCollectionsService.getWidgetByID(id);
 	}
+	
+	@RequestMapping(value="/widgets/add/api",method=RequestMethod.POST)
+	public String submitWidget(@ModelAttribute Widget widget,Model model) {
+	
+	
+      Widget w= widgetCollectionsService.addWidget(widget.getName(),widget.getDescription());
+       model.addAttribute("widget", w);
+		
+       String apiurlBuilder="{\"location\" : \"/widgets/"+w.getId()+"\" }";
+        return apiurlBuilder;
+     }
 }

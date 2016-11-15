@@ -8,20 +8,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 @Entity
 @Table(name="widget")
 public class Widget {
-
+	
+	@JsonView(View.Summary.class)
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private Integer id;
 	
-
+	@JsonView(View.Summary.class)
 	@Column(name="name")
 	private String name;
 	
-
+	@JsonView(View.Summary.class)
 	@Column(name="description")
 	private String description;
 	
