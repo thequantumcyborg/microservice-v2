@@ -34,21 +34,20 @@ public class WidgetServiceAPIController {
 
 	@RequestMapping(value = "/widgets", method = RequestMethod.POST)
 	public String submitWidget(@ModelAttribute Widget widget, Model model) {
-		
+
 		Widget w = widgetCollectionsService.addWidget(widget.getName(), widget.getDescription());
 		model.addAttribute("widget", w);
 
 		String apiurlBuilder = "{\"location\" : \"/widgets/" + w.getId() + "\"}";
 		return apiurlBuilder;
 	}
-	
-	@RequestMapping(value = "/widgets/update/api/{id}", method = RequestMethod.PUT)
-	public Widget updateWidget(@PathVariable("id") int id,@RequestBody Widget widget) {
-		
-		Widget w = widgetCollectionsService.updateWidget(widget.getName(), widget.getDescription(),widget.getId());
-		
 
-		
+	@RequestMapping(value = "/widgets/update/api/{id}", method = RequestMethod.PUT)
+	public Widget updateWidget(@PathVariable("id") int id, @RequestBody Widget widget) {
+
+		Widget w = widgetCollectionsService.updateWidget(widget.getName(), widget.getDescription(), widget.getId());
+
+		// returns jsonview w
 		return w;
 	}
 }
