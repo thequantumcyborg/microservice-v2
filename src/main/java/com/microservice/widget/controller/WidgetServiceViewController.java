@@ -41,7 +41,7 @@ public class WidgetServiceViewController {
 	@RequestMapping(value="/widgets/add",method=RequestMethod.POST)
 	public String submitWidget(@ModelAttribute Widget widget,Model model) {
 	
-	
+	  
       Widget w= widgetCollectionsService.addWidget(widget.getName(),widget.getDescription());
        model.addAttribute("widget", w);
 		

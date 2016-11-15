@@ -34,4 +34,11 @@ public class WidgetCollectionsService {
 		return addedWidget;
 	} 
 	
+	@Transactional(propagation=Propagation.REQUIRED)
+	public Widget updateWidget(String name,String description,int id){
+		
+		Widget addedWidget=widgetRepositoryJDBC.update(name,description,id);
+		
+		return addedWidget;
+	} 
 }
