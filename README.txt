@@ -1,19 +1,9 @@
-/*
- * Copyright 2016 Jump Technologies, Inc. - All Rights Reserved
- * Proprietary and Confidential
- * Unauthorized copying of this file, via any medium, is strictly prohibited without permission.
-*/
-
-Welcome to the Jump Technologies, Inc. code test.  This is a simple RESTful server which deals with fictional "Widgets".  
-
-This project uses gradle as its build system.  Either install gradle or use the gradlew program in the project folder to build.
 
 To start the server, run:
 ./gradlew run
 
 Go to http://localhost:8080/widgets/hello to hit the example endpoint.  You should see "hello world" in your browser.  
-This endpoint does not require authentication but any additional resource methods will require the Basic Authentication of: jumpdeveloper/bojangles.  
-
+ 
 Demo Spec
 
 1) Implement the WidgetResource methods (as defined in the next section)
