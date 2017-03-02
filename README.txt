@@ -7,12 +7,9 @@ Go to http://localhost:8080/widgets/hello to hit the example endpoint.  You shou
 Demo Spec
 
 1) Implement the WidgetResource methods (as defined in the next section)
-2) Make sure all existing tests pass
-3) Optionally implement your own WidgetDaoInterface and replace the supplied WidgetDaoJdbi along with tests (Use WidgetDaoTest as a start)
-	See CodeTestApplication.java for more information
-4) Optionally implement your own AuthenticationFilter and replace the supplied Base64AuthFilter
-	See CodeTestApplication.java for more information
-	You can hard-code the jumpdeveloper/bojangles credentials into the filter and not require the use of a data store.
+2)  Mockito & Unit Tests
+3)  implement WidgetDaoInterface and replace the supplied WidgetDaoJdbi along with tests
+4)  implement  AuthenticationFilter
 	
 
 The Widget class is represented by the following JSON structure:
