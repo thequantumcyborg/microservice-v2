@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>JumpTech-Widget Collections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+@media ( min-width : 768px) {
+	.sidebar {
+		position: fixed;
+		top: 51px;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
+		display: block;
+		padding: 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		/* Scrollable contents if viewport is shorter than content. */
+		background-color: #E80C7A;
+		border-right: 1px solid #eee;
+	}
+}
+
+a {
+	color: #14010B;
+	text-decoration: none;
+}
+
+div.ex1 {
+	padding-left: 40px;
+	padding-top: 40px;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">JumpTech Dashboard</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				>
+				<ul class="nav navbar-nav">
+					
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-3 col-md-2 sidebar" bgcolor="#E6E6FA">
+
+				<ul class="nav nav-sidebar">
+					<li><a href="/widgets/in" type="button"
+						class="btn btn-primary btn-lg btn-block"> <span
+							class="glyphicon glyphicon-user" aria-hidden="true"></span> Sign
+							in
+					</a></li>
+
+				</ul>
+
+			</div>
+
+
+			<div class="container">
+				<div class="ex1">
+					<iframe id='iframe2'
+						src="//www.joomag.com/magazine/jump-tech/0778532001479090132?e=1&amp;page=1&amp;embedInfo=theme,766483,473d4a,e6ccc6,ccba69,ffffff;"
+						frameborder="0"
+						style="overflow: hidden; height: 100%; width: 100%; position: absolute;"
+						height="100%" width="100%"></iframe>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
